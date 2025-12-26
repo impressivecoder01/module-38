@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { use } from 'react';
 
-const Countries = () => {
+const Countries = ({countriesPromise}) => {
+    const countriesData = use(countriesPromise)
+    const countries = countriesData.countries
+    console.log(countriesData.countries)
     return (
         <div>
-            <h1>E</h1>
+            <h1>Countries: {countries.length}</h1>
+            
         </div>
     );
 };
