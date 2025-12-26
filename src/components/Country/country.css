@@ -5,3 +5,7 @@
     border-radius: 20px;
     /* text-align: center; */
 }
+.country-visited{
+    background-color: aliceblue;
+    color: black;
+}
