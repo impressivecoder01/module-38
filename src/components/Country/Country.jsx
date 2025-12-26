@@ -1,9 +1,13 @@
 import React from 'react';
 
-const Country = () => {
+const Country = ({country}) => {
+    // console.log(country)
+    const {name,flags,population} = country
     return (
         <div>
-            <h1>Country</h1>
+            <h1>Name: {name.common}</h1>
+            <img src={flags.flags.png} alt={flags.flags.png} />
+            <p>Population: {population.population}</p>
         </div>
     );
 };
