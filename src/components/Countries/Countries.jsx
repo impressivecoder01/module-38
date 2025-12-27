@@ -29,7 +29,7 @@ const Countries = ({ countriesPromise }) => {
             <h1>visited flags: {visitedFlag.length}</h1>
             <ol className='visited-flags-container'>
                 {
-                    visitedFlag.map(flag => <img src={flag}></img>)
+                    visitedFlag.map((flag,index) => <img key={index} src={flag}></img>)
                 }
               
             </ol>
